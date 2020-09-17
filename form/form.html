@@ -1,28 +1,17 @@
-<!-- <form action="game" method="get">
-    <strong>First Name:</strong>
-    <input type="text" name="First Name"/>
-    <input type="submit" /> <br>
-    <strong>Second Name:</strong>
-    <input type="text" name="Second Name"/>
-    <input type="submit" /><br>
-    <strong>Email address:</strong>
-    <input type="text" name="Email address"/>
-    <input type="submit" />
-</form> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro to Node and MongoDB</title>
+    </head>
 
-
-<form action="/app.js" method="get" id="form1">
-    <div class="settings">
-        <label>First Name:</label>
-        <input type="text" />
-    
-        <label>Second Name:</label>
-        <input type="text" />
-    
-        <label>Email address:</label>
-        <input type="text" />
-    </div>
-    <button type="submit" form="form1" value="Submit">Submit</button>
-
-
-</form>
+    <body>
+        <h1>Into to Node and MongoDB</h1>
+        <form method="post" action="/addname">
+            <label>Enter Your Name</label><br>
+            <input type="text" name="firstName" placeholder="Enter first name..." required>
+            <input type="text" name="lastName" placeholder="Enter last name..." required>
+            <input type="text" name="Email" placeholder="Enter email.." required>
+            <input type="submit" value="Add Name">
+        </form>
+    </body>
+</html>
