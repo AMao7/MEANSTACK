@@ -1,0 +1,28 @@
+doctype html
+html
+   head
+      title = "Users Table"
+      style.
+          body {
+              font-family: "Times New Roman Georgia";
+              font-size: 20px;
+              background: #1AA7ED;
+              text-align:center;
+          }
+          }
+   body
+     h1 This Is The Database!
+     table(style='width:100%', border='1')
+      thead
+        tr: th First Name
+          th Last Name
+          th Email
+      tbody
+        each user in users
+          tr
+            td=user.firstName
+            td=user.lastName
+            td=user.emailAddress
+
+     h1 Thank you!
+     a(href='/') Go Back To The Homepage!

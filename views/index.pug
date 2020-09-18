@@ -1,0 +1,22 @@
+doctype html
+html
+   head
+      title = "Enter Your Details!"
+      style.
+          body {
+              font-family: "Times New Roman Georgia";
+              font-size: 20px;
+              background: #1AA7ED;
+              text-align:center;
+          }
+   body
+     h1 This is the Users Database
+     form(method='post' action='/addname')
+       <label>Enter Your Name and Email address!</label><br>
+       input(type='text' name='firstName' placeholder='Enter First Name...' required='')
+       input(type='text' name='lastName' placeholder='Enter Second Name...' required='')
+       input(type='text' name='emailAddress' placeholder='Enter Email Address..' required='')
+       input(type='submit' value='Submit Details')
+    
+     <br>
+     a(href='/getdetails') Show Database
